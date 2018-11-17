@@ -3,9 +3,8 @@ import static org.junit.Assert.*;
 import org.junit.Test;
 
 /**
- * To make these tests pass, you will need to create a ConstructorTest class with the member variables below.
- * 
- * Create a constructor, and getters and setters for the member variables. If they're done right, these tests will pass.
+ * To make these tests pass, you will need to fill out the Student class with the constructor,
+ * getters, and setters. If they're done right, these tests will pass.
  * 
  * **/
 
