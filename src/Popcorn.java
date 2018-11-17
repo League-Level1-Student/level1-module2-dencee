@@ -46,7 +46,19 @@ public class Popcorn {
 		System.out.println("Popcorn says: making package of " + this.flavor + " popcorn.");
 	}
 
+	public static void main(String args[]) {
+		Popcorn pop = new Popcorn("caramel");
+		Microwave mic = new Microwave();
+		
+		mic.putInMicrowave(pop);
+		
+		while( pop.kernels > 0 ) {
+			mic.setTime(1);
+			mic.startMicrowave();
+		}
+	}
 
+	
 	public void applyHeat() {
 		pause();
 

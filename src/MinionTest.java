@@ -24,6 +24,41 @@ import org.junit.Test;
 
 public class MinionTest {
 
+	class Minion {
+		private String name;
+		private String color;
+		private String temp;
+		private int eyes;
+
+		Minion(String name, int eyes, String color, String temp){
+			this.name = name;
+			this.color = color;
+			this.temp = temp;
+			this.eyes = eyes;
+		}
+		
+		public String getName() {
+			return this.name;
+		}
+		
+		public int getEyes() {
+			return this.eyes;
+		}
+
+		public String getColor() {
+			return this.color;
+		}
+		
+		public void setMaster(String temp) {
+			this.temp = temp;
+		}
+		
+		public String getMaster() {
+			return this.temp;
+		}
+		
+	}
+	
 	@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
